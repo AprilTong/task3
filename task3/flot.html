@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>翻牌游戏</title>
+    <style>
+        .container {
+            width: 900px;
+            min-height: 100px;
+            padding: 100px 50px;
+            background-color: #f0f0f0;
+            box-shadow: inset 0 0 3px rgba(0,0,0,.35);
+            perspective:1000px;
+            transform-style:preserve-3d;
+            }
+        .first{ width: 200px;
+                height: 200px;;
+                position:relative;
+                float: left;
+                transform-style:preserve-3d;}
+        .front{z-index: 2;}
+        .front:hover{cursor: pointer;
+                     transform:translateY(20px) translateZ(40px) scale(1.5)  rotateY(720deg) ;
+                     transition: 5s ease;
+                     z-index: 1;}
+        .front:hover+.back{transform: translateY(20px) translateZ(40px) scale(1.5)  rotateY(720deg);
+                           transition: 5s ease;
+                           z-index: 2;}
+        .pos{position:absolute;
+            left: 30px;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="first">
+        <img class="pos front" src="images/flot-2.png" alt=""/>
+        <img class="pos back" src="images/flot-1.png" alt=""/>
+    </div>
+    <div class="first">
+        <img class="pos front" src="images/flot-2.png" alt=""/>
+        <img class="pos back" src="images/flot-1.png" alt=""/>
+    </div>
+    <div class="first">
+        <img class="pos front" src="images/flot-2.png" alt=""/>
+        <img class="pos back" src="images/flot-1.png" alt=""/>
+    </div>
+    <div class="first">
+        <img class="pos front" src="images/flot-2.png" alt=""/>
+        <img class="pos back" src="images/flot-1.png" alt=""/>
+    </div>
+</div>
+</body>
+</html>
