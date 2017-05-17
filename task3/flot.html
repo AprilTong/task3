@@ -8,8 +8,6 @@
         $(document).ready(function(){
             $('.first').click(function(){
                 $(this).find('.front').addClass('frontAnimate');
-                $(this).find('.back').show('slow').addClass('backAnimate1');
-                $(this).find('.front').addClass('frontAnimate1');
                 $(this).find('.back').show('slow').addClass('backAnimate');
             });
         });
@@ -45,36 +43,7 @@
         .pos{position:absolute;
             left: 30px;}
     </style>
-    <!--<style>-->
-    <!--.container {-->
-    <!--width: 900px;-->
-    <!--min-height: 100px;-->
-    <!--padding: 100px 50px;-->
-    <!--}-->
-    <!--.first{-->
-    <!--width: 200px;-->
-    <!--height: 200px;-->
-    <!--position:relative;-->
-    <!--cursor: pointer;-->
-    <!--}-->
 
-    <!--.front{transform:rotateY(0);}-->
-    <!--.back{transform:rotateY(-180deg);}-->
-    <!--.first:hover .front{-->
-    <!--transform: translateY(20px) translateZ(40px) scale(1.5) rotateY(-720deg) ;-->
-    <!--}-->
-    <!--.first:hover .back{-->
-    <!--transform:translateY(20px) translateZ(40px) scale(1.5)  rotateY(0deg);-->
-    <!--}-->
-    <!--.pos{-->
-    <!--width:200px;height:200px;-->
-    <!--position:absolute;-->
-    <!--transition:all 5s;-->
-    <!--transform-style: preserve-3d;-->
-    <!--backface-visibility:hidden;-->
-
-    <!--}-->
-    <!--</style>-->
 </head>
 <body>
 <div class="container">
